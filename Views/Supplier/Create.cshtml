@@ -1,0 +1,45 @@
+﻿@model GestionFournisseur.Models.Supplier
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Create Supplier</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Create Supplier</h1>
+
+        @using (Html.BeginForm("Create", "Supplier", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name)
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email)
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.PhoneNumber)
+                @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        }
+
+        <a href="@Url.Action("List", "Supplier")" class="btn btn-secondary">Back to List</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

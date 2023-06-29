@@ -1,8 +1,55 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Supplier Management System</title>
+</head>
+<div class="container">
+    <h1 class="text-center">Welcome to Supplier Management System</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="card mt-5">
+        <div class="card-body">
+            <h3 class="card-title">Featured Suppliers</h3>
+            <p class="card-text">Here are some of our top suppliers:</p>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a asp-controller="Supplier" asp-action="Details">Mohamed Marwen Meddeb</a>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-primary" asp-controller="Supplier" asp-action="Edit">Edit</a>
+                        <a class="btn btn-danger" asp-controller="Supplier" asp-action="Delete">Delete</a>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a asp-controller="Supplier" asp-action="Details">Fernardo Vichy</a>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-primary" asp-controller="Supplier" asp-action="Edit">Edit</a>
+                        <a class="btn btn-danger" asp-controller="Supplier" asp-action="Delete">Delete</a>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a asp-controller="Supplier" asp-action="Details">John Wick</a>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-primary" asp-controller="Supplier" asp-action="Edit">Edit</a>
+                        <a class="btn btn-danger" asp-controller="Supplier" asp-action="Delete">Delete</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <a class="btn btn-success" asp-controller="Supplier" asp-action="Create">Create</a>
+    </div>
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
