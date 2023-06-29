@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using GestionFournisseur.Models;
+using System.Linq.Expressions;
+using GestionFournisseur.Data;
+using GestionFournisseur.Models;    
 
-namespace GestionFournisseur.Data
+namespace GestionFournisseur.Repositories
 {
     public class SupplierRepository
     {
@@ -25,20 +27,42 @@ namespace GestionFournisseur.Data
 
         public void AddSupplier(Supplier supplier)
         {
+        try
+        {
             _context.Suppliers.Add(supplier);
             _context.SaveChanges();
         }
-
+        catch (Exception ex)
+        {
+            throw new Exception("Error while adding supplier", ex);
+        }
+        }
         public void UpdateSupplier(Supplier supplier)
         {
-            _context.Suppliers.Update(supplier);
-            _context.SaveChanges();
+            try
+            {
+                _context.Suppliers.Update(supplier);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public void DeleteSupplier(Supplier supplier)
         {
-            _context.Suppliers.Remove(supplier);
-            _context.SaveChanges();
+            try
+            {
+                _context.Suppliers.Remove(supplier);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

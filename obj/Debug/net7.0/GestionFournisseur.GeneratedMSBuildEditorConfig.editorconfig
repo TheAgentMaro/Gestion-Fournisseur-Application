@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Git\GestionFournisseur\Gestion-Fournisseur-Application
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Git/GestionFournisseur/Gestion-Fournisseur-Application/Views/Help/Documentation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVscFxEb2N1bWVudGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Git/GestionFournisseur/Gestion-Fournisseur-Application/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Git/GestionFournisseur/Gestion-Fournisseur-Application/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/GestionFournisseur/Gestion-Fournisseur-Application/Views/Reports/SalesReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xTYWxlc1JlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Git/GestionFournisseur/Gestion-Fournisseur-Application/Views/Shared/Error.cshtml]
