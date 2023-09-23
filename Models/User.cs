@@ -1,9 +1,11 @@
-﻿using Abp.EntityHistory;
+﻿using System.ComponentModel.DataAnnotations;
+using Abp.EntityHistory;
 
 namespace GestionFournisseur.Models
 {
     public class User 
     {
+        [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }

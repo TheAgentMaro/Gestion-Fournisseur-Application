@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Otrsp8bHXedH4VQjJbi9LTTqAjUy4MKKwOZp2ALBMqFKnt5pyJ/oLDGAo4MH2JYFSfxwLFP+VeO+XTmKkgv6Yw==",
+  "dgSpecHash": "v3VUR5wGNoQuj5+fb8Q1oKeVhw3cwdakZKTRxHHYiPBKYav/jV4n9HSf44mUZ7YFAkxxU2qjAT3NBZlA6wkBUg==",
   "success": true,
   "projectFilePath": "C:\\Git\\GestionFournisseur\\Gestion-Fournisseur-Application\\GestionFournisseur.csproj",
   "expectedPackageFiles": [
@@ -90,6 +90,7 @@
     "C:\\Users\\marwe\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.11\\microsoft.entityframeworkcore.design.7.0.11.nupkg.sha512",
     "C:\\Users\\marwe\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\marwe\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.8\\microsoft.entityframeworkcore.sqlserver.7.0.8.nupkg.sha512",
+    "C:\\Users\\marwe\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.11\\microsoft.entityframeworkcore.tools.7.0.11.nupkg.sha512",
     "C:\\Users\\marwe\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\marwe\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\marwe\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

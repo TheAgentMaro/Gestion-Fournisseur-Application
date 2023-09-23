@@ -1,10 +1,12 @@
-﻿namespace GestionFournisseur.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GestionFournisseur.Models
 {
     public class Product
     {
+        [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public Supplier Supplier { get; set; }
         public int Quantity { get; set; }
         public string Status { get; set; }
         public string Date { get; set; }

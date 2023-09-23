@@ -5,6 +5,7 @@ namespace GestionFournisseur.Models
 {
     public class Supplier
     {
+        [Key]
         public int Id { get; set; }
         
         [Required(ErrorMessage = "Supplier Name is required")]
