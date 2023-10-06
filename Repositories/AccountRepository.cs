@@ -1,8 +1,9 @@
 ﻿using GestionFournisseur.Data;
+using GestionFournisseur.Repositories.Interfaces;
 
 namespace GestionFournisseur.Repositories
 {
-    public class AccountRepository
+    public class AccountRepository : IAccountRepository
     {
         private readonly ApplicationDbContext _context;
 

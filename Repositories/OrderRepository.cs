@@ -1,8 +1,9 @@
 ﻿using GestionFournisseur.Data;
+using GestionFournisseur.Repositories.Interfaces;
 
 namespace GestionFournisseur.Repositories
 {
-    public class OrderRepository
+    public class OrderRepository : IOrderRepository
     {
 
         private readonly ApplicationDbContext _context;

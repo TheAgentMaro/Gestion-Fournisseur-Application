@@ -1,8 +1,9 @@
 ﻿using GestionFournisseur.Data;
+using GestionFournisseur.Repositories.Interfaces;
 
 namespace GestionFournisseur.Repositories
 {
-    public class ProductRepository
+    public class ProductRepository : IWriteProductRepository
     {
         private readonly ApplicationDbContext _context;
 

@@ -2,10 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using GestionFournisseur.Services.Interfaces;
 
 namespace GestionFournisseur.Services
 {
-    public class SupplierService
+    public class SupplierService : ISupplierService
     {
         private readonly List<Supplier> _suppliers;
 
@@ -29,6 +30,7 @@ namespace GestionFournisseur.Services
         {
             return _suppliers.FirstOrDefault(s => s.Id == id);
         }
+
 
         public void AddSupplier(Supplier supplier)
         {

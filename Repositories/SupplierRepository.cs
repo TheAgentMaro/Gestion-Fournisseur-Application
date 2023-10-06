@@ -2,11 +2,12 @@
 using System.Linq;
 using System.Linq.Expressions;
 using GestionFournisseur.Data;
-using GestionFournisseur.Models;    
+using GestionFournisseur.Models;
+using GestionFournisseur.Repositories.Interfaces;
 
 namespace GestionFournisseur.Repositories
 {
-    public class SupplierRepository
+    public class SupplierRepository : IRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -27,15 +28,15 @@ namespace GestionFournisseur.Repositories
 
         public void AddSupplier(Supplier supplier)
         {
-        try
-        {
-            _context.Suppliers.Add(supplier);
-            _context.SaveChanges();
-        }
-        catch (Exception ex)
-        {
-            throw new Exception("Error while adding supplier", ex);
-        }
+            try
+            {
+                _context.Suppliers.Add(supplier);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error while adding supplier", ex);
+            }
         }
         public void UpdateSupplier(Supplier supplier)
         {
